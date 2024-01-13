@@ -10,9 +10,9 @@ def index():
 def index2(times):
     return render_template("index2.html", times = int(times))	# notice the 2 new named arguments!
 
-@app.route('/index2/<times>/<color>')
-def index2(times):
-    return render_template("index3.html", times = int(times), color = "color")	# notice the 2 new named arguments!
+@app.route('/index3/<times>/<color>')
+def index3(times, color):
+    return render_template("index3.html", times = int(times), color = color)	# notice the 2 new named arguments!
 
 
 if __name__=="__main__":
