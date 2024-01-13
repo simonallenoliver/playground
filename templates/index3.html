@@ -14,11 +14,14 @@
         <h1 class="welcome">Welcome!</h1>
 
         <div class="container">
-            <div class="bluebox"></div>
-            <div class="bluebox"></div>
-            <div class="bluebox"></div>
+            {% for x in range(0,times): %}
+            <div style="color: {{color}};" class="bluebox2"></div>
+            {% endfor %}
         </div>
     </div>
+
+
+
 
 </body>
 
